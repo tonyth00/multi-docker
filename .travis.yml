@@ -20,6 +20,8 @@ after_success:
   - docker push tonyth00/multi-nginx
   - docker push tonyth00/multi-server
   - docker push tonyth00/multi-worker
+  - echo $AWS_ACCESS_KEY
+  - echo $AWS_SECRET_KEY
 
 deploy:
   provider: elasticbeanstalk
